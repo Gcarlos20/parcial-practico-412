@@ -18,11 +18,14 @@ public class Libro {
 
     }
 
-    // contructor con parameetros
+    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados) {
+        this(titulo, autor, 0, numeroEjemplares, numeroEjemplaresPrestados);
+    }
 
-   public Libro(String titulo, String autor,int numeroPagina, int numeroEjemplares, int numeroEjemplaresPrestados) {
+    public Libro(String titulo, String autor, int numeroPagina, int numeroEjemplares, int numeroEjemplaresPrestados) {
         this.titulo = titulo;
         this.autor = autor;
+        this.numeroPagina = numeroPagina;
         this.numeroEjemplares = numeroEjemplares;
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
@@ -74,7 +77,7 @@ public class Libro {
     public String toString() {
         return "Título: " + titulo + 
                ", Autor: " + autor + 
-                ", Autor: " + numeroPagina + 
+             ", Páginas: " + numeroPagina + 
                ", Ejemplares Totales: " + numeroEjemplares + 
                ", Prestados: " + numeroEjemplaresPrestados + 
                ", Disponibles: " + (numeroEjemplares - numeroEjemplaresPrestados);

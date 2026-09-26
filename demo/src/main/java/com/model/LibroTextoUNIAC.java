@@ -8,6 +8,11 @@ public class LibroTextoUNIAC extends LibroTexto {
         this.facultad = "";
     }
 
+    public LibroTextoUNIAC(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String curso, String facultad) {
+        super(titulo, autor, numeroEjemplares, numeroEjemplaresPrestados, curso);
+        this.facultad = facultad;
+    }
+
     public LibroTextoUNIAC(String titulo, String autor, int numeroPagina, int numeroEjemplares, int numeroEjemplaresPrestados, String curso, String facultad) {
         super(titulo, autor, numeroPagina, numeroEjemplares, numeroEjemplaresPrestados, curso);
         this.facultad = facultad;

@@ -8,6 +8,11 @@ public class Novela extends Libro {
         this.tipo = "";
     }
 
+    public Novela(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String tipo) {
+        super(titulo, autor, numeroEjemplares, numeroEjemplaresPrestados);
+        this.tipo = tipo;
+    }
+
     public Novela(String titulo, String autor, int numeroPagina, int numeroEjemplares, int numeroEjemplaresPrestados, String tipo) {
         super(titulo, autor, numeroPagina, numeroEjemplares, numeroEjemplaresPrestados);
         this.tipo = tipo;

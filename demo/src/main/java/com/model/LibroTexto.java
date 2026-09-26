@@ -10,6 +10,11 @@ public class LibroTexto extends Libro {
         this.curso = "";
     }
 
+    public LibroTexto(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String curso) {
+        super(titulo, autor, numeroEjemplares, numeroEjemplaresPrestados);
+        this.curso = curso;
+    }
+
     public LibroTexto(String titulo, String autor,int numeroPagina, int numeroEjemplares, int numeroEjemplaresPrestados, String curso) {
         super(titulo, autor,numeroPagina, numeroEjemplares, numeroEjemplaresPrestados);
         this.curso = curso;
