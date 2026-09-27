@@ -56,7 +56,7 @@ public class Libro {
             numeroEjemplaresPrestados++;
             return true;
         }
-        System.out.println("\nLibro prestado Elige Otro......");
+        System.out.println("\nNo quedan ejemplares disponibles para prestar.");
         return false;
     }
 
@@ -67,7 +67,7 @@ public class Libro {
             numeroEjemplaresPrestados--;
             return true;
         }
-        System.out.println("\nLibro Devuelto");
+        System.out.println("\nNo hay ejemplares prestados para devolver.");
         return false;
     }
 
