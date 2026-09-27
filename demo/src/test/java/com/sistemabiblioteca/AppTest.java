@@ -52,4 +52,13 @@ public class AppTest
         assertFalse(libro.devolucion());
     }
 
+    @Test
+    public void noPrestaNiDevuelveCuandoNoHayEjemplaresCorrespondientes()
+    {
+        Libro libro = new Libro("Sin existencias", "Ana", 0, 0);
+
+        assertFalse(libro.prestamo());
+        assertFalse(libro.devolucion());
+    }
+
 }
